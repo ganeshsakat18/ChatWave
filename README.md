@@ -1,6 +1,6 @@
 <h1 align="center">ChatWave 💬</h1>
 
-![Demo App](/Demo/1.png)
+
 
 ## About This Project
 
@@ -12,6 +12,10 @@
 - 🔒 **Authorization:** Secure User Access
 - 📱 **Responsive UI:** Works on All Devices
 - 🚀 **And Many More Cool Features**
+
+
+##Demo
+![Demo App](/Demo/Screenshot2024-08-22135803.png)
 
 ## Setup .env File
 
