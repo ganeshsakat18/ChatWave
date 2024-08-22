@@ -1,0 +1,128 @@
+
+.login {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  gap: 20px; 
+  padding: 20px;
+  box-sizing: border-box;
+  background: transparent; 
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+/* Flex item  */
+.item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 500px; 
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; 
+  width: 100%;
+}
+
+/* Input field styling */
+input {
+  padding: 15px;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.6); 
+  color: #e0e0e0; 
+  border-radius: 8px;
+  width: 100%;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect for input fields */
+input:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Label styling */
+label {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #e0e0e0; 
+  text-decoration: underline;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+/* Avatar image styling */
+label img {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  object-fit: cover;
+  margin-right: 10px;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+/* Hover effect for label */
+label:hover img {
+  opacity: 1;
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background-color: #6200ea; 
+  color: #e0e0e0; 
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover effect for button */
+button:hover {
+  background-color: #3700b3; 
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  background-color: #6200ea;
+  opacity: 0.6;
+}
+
+/* Separator styling */
+.separator {
+  height: 80%;
+  width: 2px;
+  background-color: rgba(255, 255, 255, 0.2); 
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .login {
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+    padding: 10px;
+  }
+
+  .separator {
+    display: none;
+  }
+}

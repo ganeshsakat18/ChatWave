@@ -1,0 +1,44 @@
+.userInfo {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1f2a38; 
+  border-radius: 12px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
+  .user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
+    img {
+      width: 60px; 
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    
+    .userName {
+      color: #fff; 
+      font-size: 18px; 
+      font-weight: 600; 
+    }
+  }
+
+  .icons {
+    display: flex;
+    gap: 15px; 
+    
+    img {
+      width: 24px; 
+      height: 24px;
+      cursor: pointer;
+      transition: opacity 0.3s; 
+      
+      &:hover {
+        opacity: 0.8; 
+      }
+    }
+  }
+}

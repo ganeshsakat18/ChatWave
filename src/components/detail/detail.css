@@ -1,0 +1,166 @@
+.detail {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: auto;
+
+  .user {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2); 
+    background-color: rgba(33, 37, 41, 0.1);
+    box-sizing: border-box;
+
+    img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+
+  .info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgba(54, 57, 63, 0.2); 
+    box-sizing: border-box;
+
+    .option {
+      .title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        img {
+          width: 24px;
+          height: 24px;
+          background-color: rgba(0, 0, 0, 0.2); 
+          padding: 8px;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+      }
+
+      .photos {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .photoItem {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .photoDetail {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            img {
+              width: 50px;
+              height: 50px;
+              border-radius: 5px;
+              object-fit: cover;
+            }
+
+            span {
+              font-size: 14px;
+              color: rgba(255, 255, 255, 0.8); 
+              font-weight: 300;
+            }
+          }
+
+          .icon {
+            width: 24px;
+            height: 24px;
+            background-color: rgba(0, 0, 0, 0.2); 
+            padding: 8px;
+            border-radius: 50%;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    button {
+      padding: 12px;
+      background-color: rgba(230, 74, 105, 0.8); 
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      box-sizing: border-box;
+
+      &:hover {
+        background-color: rgba(220, 20, 60, 0.9); 
+      }
+
+      &.logout {
+        background-color: rgba(26, 115, 232, 0.8); 
+        padding: 10px;
+      }
+    }
+  }
+
+  
+  @media (max-width: 768px) {
+    .user {
+      padding: 15px;
+      
+      img {
+        width: 60px;
+        height: 60px;
+      }
+    }
+
+    .info {
+      padding: 15px;
+      
+      .option {
+        .title {
+          img {
+            width: 20px;
+            height: 20px;
+            padding: 6px;
+          }
+        }
+
+        .photos {
+          .photoItem {
+            .photoDetail {
+              img {
+                width: 40px;
+                height: 40px;
+              }
+
+              span {
+                font-size: 12px;
+              }
+            }
+
+            .icon {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+      }
+
+      button {
+        padding: 10px;
+        font-size: 12px;
+        
+        &.logout {
+          padding: 8px;
+        }
+      }
+    }
+  }
+}
