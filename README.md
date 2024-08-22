@@ -1,6 +1,6 @@
 <h1 align="center">ChatWave 💬</h1>
 
-![Demo App](./public/Screenshot 2024-08-22 135803.png)
+![Demo App](/public/Screenshot 2024-08-22 135803.png)
 
 ## About This Project
 
