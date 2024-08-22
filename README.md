@@ -15,7 +15,9 @@
 
 
 ##Demo
-![Demo App](/Demo/Screenshot2024-08-22135803.png)
+![Demo App](/Demo/1.png)
+![Demo App](/Demo/2.png)
+![Demo App](/Demo/3.png)
 
 ## Setup .env File
 
